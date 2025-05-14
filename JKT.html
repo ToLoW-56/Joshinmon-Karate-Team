@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карате Одеса</title>
+    <link rel="icon" href="JKT.png" type="image/jpeg"> <!-- Іконка сайту -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            color: white;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .header-content img {
+            max-height: 80px;
+        }
+
+        .header-content h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 40px 0 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .description {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .contacts {
+            text-align: center;
+            padding: 20px;
+            background-color: #eaeaea;
+        }
+
+        .contacts p {
+            margin: 10px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .telegram-button,
+        .instagram-button,
+        .facebook-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .telegram-button {
+            background-color: #0088cc;
+        }
+
+        .telegram-button:hover {
+            background-color: #006699;
+        }
+
+        .instagram-button {
+            background-color: #e1306c;
+        }
+
+        .instagram-button:hover {
+            background-color: #c1275c;
+        }
+
+        .facebook-button {
+            background-color: #3b5998;
+        }
+
+        .facebook-button:hover {
+            background-color: #2d4373;
+        }
+
+        .maps-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px 20px;
+            background-color: #fff;
+        }
+
+        .map-container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        .location {
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .map-caption {
+            text-align: center;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 850px) {
+            .maps-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="JKT.png" alt="Логотип">
+        <h1>Карате-клуб «Дзесінмон-Серінрю»</h1>
+    </div>
+</header>
+
+<!-- Блок Заболотного 26 -->
+<div class="section-title">Вулиця Заболотного 26</div>
+<section class="gallery">
+    <img src="2.jpg" alt="Заболотного 1">
+    <img src="1.jpg" alt="Заболотного 2">
+    <img src="3.jpg" alt="Заболотного 3">
+    <img src="4.jpg" alt="Заболотного 4">
+    <img src="5.jpg" alt="Заболотного 5">
+    <img src="6.jpg" alt="Заболотного 6">
+</section>
+
+<!-- Блок Головківська 42 -->
+<div class="section-title">Вулиця Головківська 42</div>
+<section class="gallery">
+    <img src="7.jpg" alt="Головківська 1">
+    <img src="8.jpg" alt="Головківська 2">
+    <img src="9.jpg" alt="Головківська 3">
+</section>
+
+<!-- Опис -->
+<section class="description">
+    Спілка дзесінмон-серінрю карате-до України.<br>
+    Карате для дітей, набір від 3 років.
+</section>
+
+<!-- Контакти -->
+<section class="contacts">
+    <p>Телефон: +380 (66) 760 36 31</p>
+    <div class="buttons">
+        <a href="https://t.me/chornyy19" class="telegram-button">Telegram</a>
+        <a href="https://www.instagram.com/serhii_chornyi_jkt?igsh=ZGV1eWZ4ZHh3NXpm" class="instagram-button">Instagram</a>
+        <a href="https://www.facebook.com/share/1CA7iGpsbj/?mibextid=wwXIfr" class="facebook-button">Facebook</a>
+    </div>
+</section>
+
+<!-- Дві мапи -->
+<section class="maps-section">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.046695207831!2d30.778929076749314!3d46.58631425787365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6254c22ab9e0d%3A0x9169e4f7fc800d06!2sKarate%20Dlya%20Ditey%20Odesa%20Poskot!5e0!3m2!1sru!2sua!4v1747235202005!5m2!1sru!2sua" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        <div class="map-caption">Вулиця Заболотного 26</div>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.216468491606!2d30.707848670939867!3d46.46422008816849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633000096c0ab%3A0x298e1e438c44b919!2sKarate%20Dlya%20Ditey%20Moldovanka!5e0!3m2!1sru!2sua!4v1747235644090!5m2!1sru!2sua" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        <div class="map-caption">Вулиця Головківська 42</div>
+    </div>
+</section>
+
+<footer class="location">
+    Joshinmon Karate Team
+</footer>
+
+</body>
+</html>
