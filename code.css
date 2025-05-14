@@ -1,0 +1,23 @@
+header {
+    background-color: #222;
+    padding: 20px;
+    color: rgb(109, 0, 0);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header-content img {
+    max-height: 80px;
+}
+
+.header-content h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
